@@ -1,0 +1,7 @@
+{
+    "secretKey":"my_secret_key",
+    "jwtExpirySeconds": 3600,
+    "port":4141,
+    "email":"skybrink29@gmail.com",
+    "password":"Asif1234!"
+}
