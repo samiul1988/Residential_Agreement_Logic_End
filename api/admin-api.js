@@ -144,16 +144,7 @@ var generateLeaseReport = async (req, res) => {
                 style: 'normal'
             },
             {
-                ul:[
-                    'Water Supply',
-                    'Hot Water Supply',
-                    'Refrigerator',
-                    'Furniture',
-                    'Range and Oven',
-                    'Electricity',
-                    'Property Tax',
-                    'Washer and Dryer'
-                ],
+                ul:req.body.includedFacilities,
                 style: 'normal',
                 margin: [20, 0,0,0],
                 alignment: 'left'
@@ -470,7 +461,7 @@ var sendEmail = async (req, res) => {
       from: creds.USER,
       to: email,
       cc: ["samiulhaydereee@gmail.com", "zia082000@yahoo.com", "mdmorshedul.islam.ucal@gmail.com", "miazinaser@gmail.com", "hasan.eee82@gmail.com" ], //   
-      subject: 'Lease Agreement - 4304 Brentwood Green NW, Calgary',
+      subject: `Lease Agreement - 4304 Brentwood Green NW, Calgary - Tenant: ${name}`,
       text: content,
       attachments:[
           {
