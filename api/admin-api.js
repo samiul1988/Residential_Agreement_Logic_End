@@ -469,7 +469,7 @@ var sendEmail = async (req, res) => {
     var mail = {
       from: creds.USER,
       to: email,
-      cc: ["samiulhaydereee@gmail.com", "zia082000@yahoo.com"],//, "mdmorshedul.islam.ucal@gmail.com", "miazinaser@gmail.com", "hasan.eee82@gmail.com" ], //   
+      cc: ["samiulhaydereee@gmail.com", "zia082000@yahoo.com", "mdmorshedul.islam.ucal@gmail.com", "miazinaser@gmail.com", "hasan.eee82@gmail.com" ], //   
       subject: 'Lease Agreement - 4304 Brentwood Green NW, Calgary',
       text: content,
       attachments:[
